@@ -16,7 +16,9 @@ bert4keras的安装可以参考[**bert4keras的安装过程**](https://github.co
 
 - keras 2.4+可以用，但事实上keras 2.4.x基本上已经完全等价于tf.keras了，因此如果你要用keras 2.4+，倒不如直接用tf.keras。
 </blockquote>
+
 本文采用以下tf、keras组合：
+
 - Python 3.7 
 - tensorflow-gpu==1.15
 - keras==2.3.1
