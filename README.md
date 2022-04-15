@@ -7,11 +7,6 @@
 
 
 ## Dependencies
-- Python 3.7 
-- tensorflow-gpu==1.15
-- keras==2.3.1
-- bert4keras==0.11.1
-## Quick Start
 bert4keras的安装可以参考[**bert4keras的安装过程**](https://github.com/bojone/bert4keras#%E4%BD%BF%E7%94%A8)，理论上有很多种tf+keras的组合：
 <blockquote><strong>关于bert4keras的环境组合</strong>
   
@@ -21,6 +16,13 @@ bert4keras的安装可以参考[**bert4keras的安装过程**](https://github.co
 
 - keras 2.4+可以用，但事实上keras 2.4.x基本上已经完全等价于tf.keras了，因此如果你要用keras 2.4+，倒不如直接用tf.keras。
 </blockquote>
+本文采用以下tf、keras组合：
+- Python 3.7 
+- tensorflow-gpu==1.15
+- keras==2.3.1
+- bert4keras==0.11.1
+
+## Quick Start
 
 ```
 pip install tensorflow-gpu==1.15
