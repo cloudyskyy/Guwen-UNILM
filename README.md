@@ -12,7 +12,7 @@
 - keras==2.3.1
 - bert4keras==0.11.1
 ## Quick Start
-bert4keras的安装可以参考[**bert4keras的安装过程**](https://github.com/bojone/bert4keras#%E4%BD%BF%E7%94%A8)。
+bert4keras的安装可以参考[**bert4keras的安装过程**](https://github.com/bojone/bert4keras#%E4%BD%BF%E7%94%A8)：理论上有很多种tf+keras的组合。
 <blockquote><strong>关于bert4keras的环境组合</strong>
   
 - 支持tf+keras和tf+tf.keras，后者需要提前传入环境变量TF_KERAS=1。
