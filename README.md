@@ -48,3 +48,8 @@ pip install h5py==2.10.0   # 如不安装，h5py版本问题会导致keras无法
 ```
 python train.py
 ```
+
+### 模型预测生成文本，并进行BLEU打分
+```
+python eval.py
+```
