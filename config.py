@@ -3,7 +3,7 @@
 MAX_LEN = 128
 batch_size = 30
 steps_per_epoch = 1000
-epochs = 20  # 这里的epochs指的是训练多少轮的bs*step，不是指数据集的数据量，当然可以调整bs、step使bs*step=len(数据集)
+epochs = 15  # 这里的epochs指的是训练多少轮的bs*step，不是指数据集的数据量，当然可以调整bs、step使bs*step=len(数据集)
 
 Ancient2Modern = False
 use_guwenbert = True
