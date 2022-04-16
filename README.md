@@ -33,7 +33,7 @@ pip install keras==2.3.1
 pip install bert4keras==0.11.1
 pip install h5py==2.10.0   # 如不安装，h5py版本问题会导致keras无法load模型权重。（本机的tf+keras环境有这个问题，可以先忽略这一行，有问题再安装。） 
 ```
-除此之外，模型测试时计算BLEU分数需要用到perl脚本，如果环境中没有perl，可以前往[官网](ttps://www.perl.org/get.html)安装
+除此之外，模型测试时计算BLEU分数需要用到`multi-bleu.perl`脚本，如果环境中没有perl，可以前往[官网](https://www.perl.org/get.html)安装
 
 ### 预训练模型下载
 - **BERT-base-chinese**:  [chinese_L-12_H-768_A-12](https://storage.googleapis.com/bert_models/2018_11_03/chinese_L-12_H-768_A-12.zip)
