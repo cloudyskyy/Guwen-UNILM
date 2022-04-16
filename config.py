@@ -11,7 +11,7 @@ use_guwenbert = True
 modern2ancient = not Ancient2Modern
 
 # 数据集设置
-dataset = 'hist'  # 可选数据集{'hist', 'liter'}
+dataset = 'hist'
 MODERN_TRAIN_PATH = f'data/{dataset}/modern-train.txt'
 ANCIENT_TRAIN_PATH = f'data/{dataset}/ancient-train.txt'
 MODERN_TEST_PATH = f'data/{dataset}/modern-test.txt'
