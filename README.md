@@ -26,10 +26,25 @@ bert4keras的安装可以参考[**bert4keras的安装过程**](https://github.co
 - bert4keras==0.11.1
 
 ## Quick Start
-
+### 环境配置准备
 ```
 pip install tensorflow-gpu==1.15
 pip install keras==2.3.1
 pip install bert4keras==0.11.1
+pip install h5py==2.10.0   # 如不安装，h5py版本问题会导致keras无法load模型权重。（本机的tf+keras环境有这个问题，可以先忽略这一行，有问题再安装。） 
+pip install perl   #模型测试时计算BLEU需要用到
+
 ```
 
+### 预训练模型下载
+- **BERT-base-chinese**:  [chinese_L-12_H-768_A-12](https://storage.googleapis.com/bert_models/2018_11_03/chinese_L-12_H-768_A-12.zip)
+- **RoBERTa-base-chinese**:  [chinese_roberta_wwm_ext_L-12_H-768_A-12](https://drive.google.com/open?id=1dtad0FFzG11CBsawu8hvwwzU2R0FDI94) 或去[Chinese-BERT-wwm](https://github.com/ymcui/Chinese-BERT-wwm)下载
+- **_Guwenbert_** : [Guwenbert的开源版本](https://github.com/Ethan-yt/guwenbert)是pytorch权重，因此需要转化为tf权重。可以自行转换格式，也可以使用我转换的版本：[百度网盘](https://pan.baidu.com/s/1heS4B3wZypJjKuhtpIF7Lg) 提取码：vcdp
+
+### 模型参数修改
+如果需要修改模型的训练、预测参数，请前往`config.py`中调整`batch size`、`MAX_LEN`、翻译方向（古至今还是今至古）、预训练模型参数位置等。
+
+### 模型训练
+```
+python train.py
+```
