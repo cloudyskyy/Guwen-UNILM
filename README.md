@@ -7,7 +7,7 @@
 - **paper link : [Guwen-UNILM: Machine Translation Between Ancient and Modern Chinese Based on Pre-Trained Models(NLPCC'21)](https://link.springer.com/chapter/10.1007/978-3-030-88480-2_10)** 
 
 - 本仓库是基于[bert4keras](https://github.com/bojone/bert4keras)实现的古文-现代文翻译模型。具体使用了基于掩码自注意力机制的[UNILM(Li al., 2019)](https://arxiv.org/abs/1905.03197)预训练模型作为翻译系统的backbone。我们首先使用了普通的中文（现代文）BERT、Roberta权重作为UNILM的初始权重以训练UNILM模型（具体在文中分别为B-UNILM以及R-UNILM）。为了更好的使UNILM模型适应古文的特性，我们尝试使用了在古文预训练模型[Guwen-BERT](https://github.com/Ethan-yt/guwenbert)，作为UNILM的初始权重，并且获得了最优的效果。
-- **关于更好的数据集：** 本人在20年末提出的数据集已经不够先进了，20K-30K左右的数据量对于机器翻译任务来说实在是比较小。幸运的是，**小牛翻译（东北大学NLP实验室）在2022年2月开源了一个大规模(1000K)的句子级文言文-现代文平行语料，一共有967257个句对，地址在[文言文（古文）-现代文平行语料](https://github.com/NiuTrans/Classical-Modern)，与本文构建的数据集形式如出一辙，都为句子级平行语料，且是我们的数据集规模的30-50倍。** 在该数据集上也可以使用我们Guwen-UNILM的代码运行。如有兴趣可以拿本仓库的代码去跑一下。
+- **关于更好的数据集：** 本人在20年末提出的数据集已经不够先进了，20K-30K左右的数据量对于机器翻译任务来说实在是比较小。幸运的是，**小牛翻译（东北大学NLP实验室）在2022年2月开源了一个大规模(接近1000K数据量)的句子级文言文-现代文平行语料，一共有967257个句对，地址在[文言文（古文）-现代文平行语料](https://github.com/NiuTrans/Classical-Modern)，与本文构建的数据集形式如出一辙，都为句子级平行语料，且是我们的数据集规模的30-50倍。** 在该数据集上也可以使用我们Guwen-UNILM的代码运行。如有兴趣可以拿本仓库的代码去跑一下。
 
 
 ## Dependencies
